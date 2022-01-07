@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet var Label: UILabel!
+    
+    @IBOutlet var TextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Label.text = "hi"
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func Btn(_ sender: UIButton) {
+        Label.text = TextField.text
+    }
+    
 }
 
