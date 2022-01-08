@@ -118,21 +118,52 @@
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--3단계-->
         <scene sceneID="iZh-3z-dLl">
             <objects>
-                <viewController id="53m-2a-IAO" sceneMemberID="viewController">
+                <viewController id="53m-2a-IAO" customClass="imageViewerViewController" customModule="_107" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ncd-DE-4yr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PqC-5y-04w">
+                                <rect key="frame" x="20" y="88" width="374" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P62-1x-YZ9">
+                                <rect key="frame" x="275" y="766" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다음"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="53m-2a-IAO" eventType="touchUpInside" id="Fzy-fh-GOZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMG-j4-LsL">
+                                <rect key="frame" x="90" y="766" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="이전"/>
+                                <connections>
+                                    <action selector="btnPrev:" destination="53m-2a-IAO" eventType="touchUpInside" id="Y8p-E9-vig"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Kcw-mK-vIK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kcw-mK-vIK" firstAttribute="bottom" secondItem="P62-1x-YZ9" secondAttribute="bottom" constant="65" id="DAZ-ok-Z0z"/>
+                            <constraint firstItem="aMG-j4-LsL" firstAttribute="leading" secondItem="Kcw-mK-vIK" secondAttribute="leading" constant="90" id="Pni-0u-aEa"/>
+                            <constraint firstItem="Kcw-mK-vIK" firstAttribute="bottom" secondItem="aMG-j4-LsL" secondAttribute="bottom" constant="65" id="Qta-YW-97v"/>
+                            <constraint firstItem="Kcw-mK-vIK" firstAttribute="trailing" secondItem="P62-1x-YZ9" secondAttribute="trailing" constant="90" id="hgk-24-Di9"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wlj-YR-tbi"/>
+                    <navigationItem key="navigationItem" title="3단계" id="wlj-YR-tbi"/>
+                    <connections>
+                        <outlet property="imgViewer" destination="PqC-5y-04w" id="CzX-er-fjt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqX-pp-BlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="70"/>
+            <point key="canvasLocation" x="2492.753623188406" y="69.642857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6sa-aL-vHn">

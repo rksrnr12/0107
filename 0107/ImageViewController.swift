@@ -39,13 +39,13 @@ class ImageViewController: UIViewController {
         if imageState == true {
             
             newWidth = ImgView.frame.width/scale
-            newHeight = ImgView.frame.width/scale
+            newHeight = ImgView.frame.height/scale
             btnOutlet.setTitle("확대", for: .normal)
             
             
         }else{
             newWidth = ImgView.frame.width*scale
-            newHeight = ImgView.frame.width*scale
+            newHeight = ImgView.frame.height*scale
             btnOutlet.setTitle("축소", for: .normal)
         }
         ImgView.frame.size = CGSize(width: newWidth, height: newHeight)
