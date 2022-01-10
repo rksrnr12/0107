@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D676321278C1EC600716757 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676317278C1EC600716757 /* 6.jpg */; };
+		7D676322278C1EC600716757 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676318278C1EC600716757 /* 3.jpg */; };
+		7D676323278C1EC600716757 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676319278C1EC600716757 /* 1.jpg */; };
+		7D676324278C1EC600716757 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D67631A278C1EC600716757 /* 4.jpg */; };
+		7D676325278C1EC600716757 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D67631B278C1EC600716757 /* 9.jpg */; };
+		7D676326278C1EC600716757 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D67631C278C1EC600716757 /* 10.jpg */; };
+		7D676327278C1EC600716757 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D67631D278C1EC600716757 /* 2.jpg */; };
+		7D676328278C1EC600716757 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D67631E278C1EC600716757 /* 5.jpg */; };
+		7D676329278C1EC600716757 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D67631F278C1EC600716757 /* 7.jpg */; };
+		7D67632A278C1EC600716757 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676320278C1EC600716757 /* 8.jpg */; };
+		7D67632C278C1EE200716757 /* pickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67632B278C1EE200716757 /* pickerViewController.swift */; };
 		7D97056527889FE00091FD7D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97056427889FE00091FD7D /* ImageViewController.swift */; };
 		7D9705692788A7070091FD7D /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9705672788A7070091FD7D /* lamp_off.png */; };
 		7D97056A2788A7070091FD7D /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9705682788A7070091FD7D /* lamp_on.png */; };
@@ -28,6 +39,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D676317278C1EC600716757 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		7D676318278C1EC600716757 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		7D676319278C1EC600716757 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		7D67631A278C1EC600716757 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		7D67631B278C1EC600716757 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		7D67631C278C1EC600716757 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		7D67631D278C1EC600716757 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		7D67631E278C1EC600716757 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		7D67631F278C1EC600716757 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		7D676320278C1EC600716757 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		7D67632B278C1EE200716757 /* pickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickerViewController.swift; sourceTree = "<group>"; };
 		7D97056427889FE00091FD7D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		7D9705672788A7070091FD7D /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
 		7D9705682788A7070091FD7D /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
@@ -61,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D676316278C1E9000716757 /* 5stepImage */ = {
+			isa = PBXGroup;
+			children = (
+				7D676319278C1EC600716757 /* 1.jpg */,
+				7D67631D278C1EC600716757 /* 2.jpg */,
+				7D676318278C1EC600716757 /* 3.jpg */,
+				7D67631A278C1EC600716757 /* 4.jpg */,
+				7D67631E278C1EC600716757 /* 5.jpg */,
+				7D676317278C1EC600716757 /* 6.jpg */,
+				7D67631F278C1EC600716757 /* 7.jpg */,
+				7D676320278C1EC600716757 /* 8.jpg */,
+				7D67631B278C1EC600716757 /* 9.jpg */,
+				7D67631C278C1EC600716757 /* 10.jpg */,
+			);
+			path = 5stepImage;
+			sourceTree = "<group>";
+		};
 		7D9705662788A6A20091FD7D /* 2stepImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +134,7 @@
 		7DBE9073278819A100CF093E /* 0107 */ = {
 			isa = PBXGroup;
 			children = (
+				7D676316278C1E9000716757 /* 5stepImage */,
 				7D9705662788A6A20091FD7D /* 2stepImage */,
 				7DBE9074278819A100CF093E /* AppDelegate.swift */,
 				7DBE9076278819A100CF093E /* SceneDelegate.swift */,
@@ -102,6 +142,7 @@
 				7D97056427889FE00091FD7D /* ImageViewController.swift */,
 				7DD5CDB22789D21E00BFF7C5 /* imageViewerViewController.swift */,
 				7D9751582789DB860069C339 /* datePickerViewController.swift */,
+				7D67632B278C1EE200716757 /* pickerViewController.swift */,
 				7DBE907A278819A100CF093E /* Main.storyboard */,
 				7DBE9080278819A200CF093E /* Assets.xcassets */,
 				7DBE9082278819A200CF093E /* LaunchScreen.storyboard */,
@@ -172,14 +213,24 @@
 				7DD5CDBF2789D28D00BFF7C5 /* 5.png in Resources */,
 				7DD5CDBB2789D28D00BFF7C5 /* 6.png in Resources */,
 				7DBE9084278819A200CF093E /* LaunchScreen.storyboard in Resources */,
+				7D676324278C1EC600716757 /* 4.jpg in Resources */,
 				7DBE9081278819A200CF093E /* Assets.xcassets in Resources */,
+				7D676322278C1EC600716757 /* 3.jpg in Resources */,
+				7D67632A278C1EC600716757 /* 8.jpg in Resources */,
 				7DD5CDBC2789D28D00BFF7C5 /* 3.png in Resources */,
+				7D676329278C1EC600716757 /* 7.jpg in Resources */,
 				7D97056A2788A7070091FD7D /* lamp_on.png in Resources */,
+				7D676321278C1EC600716757 /* 6.jpg in Resources */,
 				7DD5CDBA2789D28D00BFF7C5 /* 1.png in Resources */,
 				7DD5CDBD2789D28D00BFF7C5 /* 2.png in Resources */,
 				7DBE907C278819A100CF093E /* Main.storyboard in Resources */,
+				7D676327278C1EC600716757 /* 2.jpg in Resources */,
 				7DD5CDBE2789D28D00BFF7C5 /* 4.png in Resources */,
+				7D676328278C1EC600716757 /* 5.jpg in Resources */,
+				7D676326278C1EC600716757 /* 10.jpg in Resources */,
+				7D676325278C1EC600716757 /* 9.jpg in Resources */,
 				7D9705692788A7070091FD7D /* lamp_off.png in Resources */,
+				7D676323278C1EC600716757 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +243,7 @@
 			files = (
 				7DBE907F278819A100CF093E /* _107.xcdatamodeld in Sources */,
 				7DBE9079278819A100CF093E /* ViewController.swift in Sources */,
+				7D67632C278C1EE200716757 /* pickerViewController.swift in Sources */,
 				7DD5CDB32789D21E00BFF7C5 /* imageViewerViewController.swift in Sources */,
 				7D97056527889FE00091FD7D /* ImageViewController.swift in Sources */,
 				7D9751592789DB860069C339 /* datePickerViewController.swift in Sources */,
