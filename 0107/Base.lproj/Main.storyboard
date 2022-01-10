@@ -175,7 +175,7 @@
             </objects>
             <point key="canvasLocation" x="1875" y="78"/>
         </scene>
-        <!--Date Picker View Controller-->
+        <!--4단계-->
         <scene sceneID="bNI-qP-MNq">
             <objects>
                 <viewController id="5bs-gN-0xw" customClass="datePickerViewController" customModule="_107" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,7 +193,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="IQ5-3D-RvG">
-                                        <rect key="frame" x="20" y="81" width="334" height="413"/>
+                                        <rect key="frame" x="20" y="80.5" width="334" height="413"/>
                                         <connections>
                                             <action selector="datePicker:" destination="5bs-gN-0xw" eventType="valueChanged" id="1dw-eZ-DS6"/>
                                         </connections>
@@ -224,7 +224,7 @@
                             <constraint firstItem="yi3-do-0ju" firstAttribute="leading" secondItem="KFj-WT-ybS" secondAttribute="leading" constant="20" id="yiz-ij-mLP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vAE-eH-zTJ">
+                    <navigationItem key="navigationItem" title="4단계" id="vAE-eH-zTJ">
                         <barButtonItem key="rightBarButtonItem" title="다음" id="9vT-w0-XWm">
                             <connections>
                                 <segue destination="TpL-QK-TcK" kind="show" id="v8l-Xm-wbw"/>
@@ -240,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="1873.913043478261" y="815.625"/>
         </scene>
-        <!--View Controller-->
+        <!--5단계-->
         <scene sceneID="ue1-FZ-HFL">
             <objects>
                 <viewController id="TpL-QK-TcK" sceneMemberID="viewController">
@@ -250,7 +250,7 @@
                         <viewLayoutGuide key="safeArea" id="6lo-E0-P4l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Dil-ar-Ysn"/>
+                    <navigationItem key="navigationItem" title="5단계" id="Dil-ar-Ysn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWm-BF-yoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
