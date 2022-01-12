@@ -25,7 +25,7 @@ class pickerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int { //피커뷰에서 보일 컴포넌트의 개수를 지정
-        return 1
+        return 2
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int { //피커뷰의 표시되는 열의 개수
         return image.count
@@ -36,8 +36,11 @@ class pickerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     }*/
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) { //피커뷰를 선택하면 실행될 코드들
+        if component == 0 { //첫번째 컴포넌트는 레이블만 변경
         label.text = "사진이름 :" + image[row] //레이블의 글씨를 변경
+        }else if component == 1{ // 두번째 컴포넌트는 이미지뷰를 변경
         imgView.image = UIImage(named: image[row]) //이미지를 출력
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
