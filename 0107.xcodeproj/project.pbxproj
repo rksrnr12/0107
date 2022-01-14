@@ -11,6 +11,8 @@
 		7D01FDB9278E8FD700218EE7 /* lamp-remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D01FDB6278E8FD700218EE7 /* lamp-remove.png */; };
 		7D01FDBA278E8FD700218EE7 /* lamp-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D01FDB7278E8FD700218EE7 /* lamp-off.png */; };
 		7D01FDBB278E8FD700218EE7 /* lamp-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D01FDB8278E8FD700218EE7 /* lamp-on.png */; };
+		7D23DCA227915F8B0019EA4A /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23DCA127915F8B0019EA4A /* webViewController.swift */; };
+		7D23DCA527916A080019EA4A /* table.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D23DCA427916A080019EA4A /* table.html */; };
 		7D676321278C1EC600716757 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676317278C1EC600716757 /* 6.jpg */; };
 		7D676322278C1EC600716757 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676318278C1EC600716757 /* 3.jpg */; };
 		7D676323278C1EC600716757 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676319278C1EC600716757 /* 1.jpg */; };
@@ -47,6 +49,8 @@
 		7D01FDB6278E8FD700218EE7 /* lamp-remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-remove.png"; sourceTree = "<group>"; };
 		7D01FDB7278E8FD700218EE7 /* lamp-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-off.png"; sourceTree = "<group>"; };
 		7D01FDB8278E8FD700218EE7 /* lamp-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-on.png"; sourceTree = "<group>"; };
+		7D23DCA127915F8B0019EA4A /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
+		7D23DCA427916A080019EA4A /* table.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = table.html; sourceTree = "<group>"; };
 		7D676317278C1EC600716757 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		7D676318278C1EC600716757 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		7D676319278C1EC600716757 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -101,6 +105,14 @@
 			path = 6stepImage;
 			sourceTree = "<group>";
 		};
+		7D23DCA3279169F40019EA4A /* 7stepFile */ = {
+			isa = PBXGroup;
+			children = (
+				7D23DCA427916A080019EA4A /* table.html */,
+			);
+			path = 7stepFile;
+			sourceTree = "<group>";
+		};
 		7D676316278C1E9000716757 /* 5stepImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 		7DBE9073278819A100CF093E /* 0107 */ = {
 			isa = PBXGroup;
 			children = (
+				7D23DCA3279169F40019EA4A /* 7stepFile */,
 				7D01FDB5278E8FBE00218EE7 /* 6stepImage */,
 				7D676316278C1E9000716757 /* 5stepImage */,
 				7D9705662788A6A20091FD7D /* 2stepImage */,
@@ -163,6 +176,7 @@
 				7D9751582789DB860069C339 /* datePickerViewController.swift */,
 				7D67632B278C1EE200716757 /* pickerViewController.swift */,
 				7D01FDB3278E8E3F00218EE7 /* alertViewController.swift */,
+				7D23DCA127915F8B0019EA4A /* webViewController.swift */,
 				7DBE907A278819A100CF093E /* Main.storyboard */,
 				7DBE9080278819A200CF093E /* Assets.xcassets */,
 				7DBE9082278819A200CF093E /* LaunchScreen.storyboard */,
@@ -245,6 +259,7 @@
 				7D676321278C1EC600716757 /* 6.jpg in Resources */,
 				7DD5CDBA2789D28D00BFF7C5 /* 1.png in Resources */,
 				7DD5CDBD2789D28D00BFF7C5 /* 2.png in Resources */,
+				7D23DCA527916A080019EA4A /* table.html in Resources */,
 				7D01FDBA278E8FD700218EE7 /* lamp-off.png in Resources */,
 				7DBE907C278819A100CF093E /* Main.storyboard in Resources */,
 				7D676327278C1EC600716757 /* 2.jpg in Resources */,
@@ -269,6 +284,7 @@
 				7D67632C278C1EE200716757 /* pickerViewController.swift in Sources */,
 				7D01FDB4278E8E3F00218EE7 /* alertViewController.swift in Sources */,
 				7DD5CDB32789D21E00BFF7C5 /* imageViewerViewController.swift in Sources */,
+				7D23DCA227915F8B0019EA4A /* webViewController.swift in Sources */,
 				7D97056527889FE00091FD7D /* ImageViewController.swift in Sources */,
 				7D9751592789DB860069C339 /* datePickerViewController.swift in Sources */,
 				7DBE9075278819A100CF093E /* AppDelegate.swift in Sources */,

@@ -295,7 +295,13 @@
                             <constraint firstItem="Hu6-h3-CTL" firstAttribute="leading" secondItem="824-48-dlJ" secondAttribute="leading" constant="20" id="ktm-g5-iVi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="6단계" id="YXj-iB-STG"/>
+                    <navigationItem key="navigationItem" title="6단계" id="YXj-iB-STG">
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="5FN-kb-IH6">
+                            <connections>
+                                <segue destination="qzs-SP-RP3" kind="show" id="OcF-5d-8Dt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="H6C-uy-LhR" id="Jex-f7-syG"/>
                     </connections>
@@ -343,7 +349,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="5단계" id="Dil-ar-Ysn">
-                        <barButtonItem key="rightBarButtonItem" title="6단계" id="RyS-gs-MIT">
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="RyS-gs-MIT">
                             <connections>
                                 <segue destination="kmw-Co-QXW" kind="show" id="zsr-eB-A99"/>
                             </connections>
@@ -358,6 +364,133 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWm-BF-yoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2813.04347826087" y="69.642857142857139"/>
+        </scene>
+        <!--7단계-->
+        <scene sceneID="Hov-me-y25">
+            <objects>
+                <viewController id="qzs-SP-RP3" customClass="webViewController" customModule="_107" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eyS-Yh-azi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QbA-lW-tTx">
+                                <rect key="frame" x="20" y="88" width="375" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-SY-KP8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfM-jt-AWX">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="290" id="wnv-Xg-NJz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-K3-b8k">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="34"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Go"/>
+                                                <connections>
+                                                    <action selector="buttonGo:" destination="qzs-SP-RP3" eventType="touchUpInside" id="Yx6-Fk-K5z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Bdg-6a-8vL">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxf-Tt-mNi">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="site1"/>
+                                                <connections>
+                                                    <action selector="buttonSite1:" destination="qzs-SP-RP3" eventType="touchUpInside" id="Zfq-5q-gX6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESk-hH-aJ5">
+                                                <rect key="frame" x="101.5" y="0.0" width="71" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="site2"/>
+                                                <connections>
+                                                    <action selector="buttonSite2:" destination="qzs-SP-RP3" eventType="touchUpInside" id="e3U-sA-DFr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwX-oi-PTb">
+                                                <rect key="frame" x="202.5" y="0.0" width="71.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Html"/>
+                                                <connections>
+                                                    <action selector="buttonHtml:" destination="qzs-SP-RP3" eventType="touchUpInside" id="Cok-Id-NLK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Ra-5he">
+                                                <rect key="frame" x="304" y="0.0" width="71" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="file"/>
+                                                <connections>
+                                                    <action selector="buttonFile:" destination="qzs-SP-RP3" eventType="touchUpInside" id="Sxh-Ke-j2Q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifg-tN-zZ0">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="635"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m48-Ru-soX">
+                                        <rect key="frame" x="0.0" y="730" width="375" height="44"/>
+                                        <items>
+                                            <barButtonItem systemItem="stop" id="x3c-uC-hg9">
+                                                <connections>
+                                                    <action selector="BarButtonStop:" destination="qzs-SP-RP3" id="WqR-FT-Hmd"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="ezf-ww-RBQ"/>
+                                            <barButtonItem systemItem="refresh" id="SIV-2b-7n5">
+                                                <connections>
+                                                    <action selector="BarButtonRefresh:" destination="qzs-SP-RP3" id="GKL-aG-Hyk"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="6hf-MU-viQ"/>
+                                            <barButtonItem systemItem="rewind" id="bRw-1j-d9r">
+                                                <connections>
+                                                    <action selector="BarButtonBack:" destination="qzs-SP-RP3" id="zYV-Dy-NoJ"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="Nbq-B0-Knn"/>
+                                            <barButtonItem systemItem="fastForward" id="OId-k9-WFj">
+                                                <connections>
+                                                    <action selector="BarButtonForward:" destination="qzs-SP-RP3" id="SRI-1W-7aG"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wg6-pq-v4O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wg6-pq-v4O" firstAttribute="trailing" secondItem="QbA-lW-tTx" secondAttribute="trailing" constant="19" id="OAF-zZ-qmX"/>
+                            <constraint firstItem="QbA-lW-tTx" firstAttribute="top" secondItem="Wg6-pq-v4O" secondAttribute="top" id="dA9-bn-kSO"/>
+                            <constraint firstItem="Wg6-pq-v4O" firstAttribute="bottom" secondItem="QbA-lW-tTx" secondAttribute="bottom" id="dbw-lM-ZQb"/>
+                            <constraint firstItem="QbA-lW-tTx" firstAttribute="leading" secondItem="Wg6-pq-v4O" secondAttribute="leading" constant="20" id="xFy-Qi-Wic"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="7단계" id="xrc-Wg-wU2"/>
+                    <connections>
+                        <outlet property="textField" destination="dfM-jt-AWX" id="d1Z-Q3-xkL"/>
+                        <outlet property="webView" destination="Ifg-tN-zZ0" id="kFC-0g-GjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBZ-s3-fMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3789.8550724637685" y="77.678571428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6sa-aL-vHn">
