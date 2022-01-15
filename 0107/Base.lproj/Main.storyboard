@@ -310,6 +310,41 @@
             </objects>
             <point key="canvasLocation" x="2824.6376811594205" y="800.89285714285711"/>
         </scene>
+        <!--7단계 도전-->
+        <scene sceneID="z2b-ql-Ygw">
+            <objects>
+                <viewController storyboardIdentifier="7" id="wVE-Dv-1rJ" customClass="webMissonViewController" customModule="_107" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wna-FR-fla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8FC-ds-3yT">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mdX-0j-uWU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8FC-ds-3yT" firstAttribute="leading" secondItem="mdX-0j-uWU" secondAttribute="leading" constant="20" id="46c-Pq-6Wp"/>
+                            <constraint firstItem="mdX-0j-uWU" firstAttribute="bottom" secondItem="8FC-ds-3yT" secondAttribute="bottom" id="C8W-P4-iBp"/>
+                            <constraint firstItem="8FC-ds-3yT" firstAttribute="top" secondItem="mdX-0j-uWU" secondAttribute="top" id="gsw-P4-JRX"/>
+                            <constraint firstItem="mdX-0j-uWU" firstAttribute="trailing" secondItem="8FC-ds-3yT" secondAttribute="trailing" constant="20" id="lxH-4b-Pqr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="7단계 도전" id="hvO-cy-nIu"/>
+                    <connections>
+                        <outlet property="webView" destination="8FC-ds-3yT" id="7OS-Jb-Dwr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocU-wW-tJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3809" y="811"/>
+        </scene>
         <!--5단계-->
         <scene sceneID="ue1-FZ-HFL">
             <objects>
@@ -482,7 +517,13 @@
                             <constraint firstItem="QbA-lW-tTx" firstAttribute="leading" secondItem="Wg6-pq-v4O" secondAttribute="leading" constant="20" id="xFy-Qi-Wic"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="7단계" id="xrc-Wg-wU2"/>
+                    <navigationItem key="navigationItem" title="7단계" id="xrc-Wg-wU2">
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="lhx-hG-UOG">
+                            <connections>
+                                <segue destination="wVE-Dv-1rJ" kind="show" id="s8q-3Z-hhy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textField" destination="dfM-jt-AWX" id="d1Z-Q3-xkL"/>
                         <outlet property="webView" destination="Ifg-tN-zZ0" id="kFC-0g-GjR"/>
