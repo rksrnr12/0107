@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController, UIGestureRecognizerDelegate { //뒤로가기 제스쳐 사용을 위한 델리게이트
     
     @IBOutlet var ImgView: UIImageView!
     
@@ -18,6 +18,8 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ImgView.image = UIImage(named: "lamp_on.png")
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self //뒤로가기 제스쳐 사용
+        
         // Do any additional setup after loading the view.
     }
     
