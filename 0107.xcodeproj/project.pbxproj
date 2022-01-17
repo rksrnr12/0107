@@ -11,6 +11,7 @@
 		7D01FDB9278E8FD700218EE7 /* lamp-remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D01FDB6278E8FD700218EE7 /* lamp-remove.png */; };
 		7D01FDBA278E8FD700218EE7 /* lamp-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D01FDB7278E8FD700218EE7 /* lamp-off.png */; };
 		7D01FDBB278E8FD700218EE7 /* lamp-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D01FDB8278E8FD700218EE7 /* lamp-on.png */; };
+		7D0D88AC27953F300020EA10 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D88AB27953F300020EA10 /* mapViewController.swift */; };
 		7D23DCA227915F8B0019EA4A /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23DCA127915F8B0019EA4A /* webViewController.swift */; };
 		7D23DCA527916A080019EA4A /* table.html in Resources */ = {isa = PBXBuildFile; fileRef = 7D23DCA427916A080019EA4A /* table.html */; };
 		7D676321278C1EC600716757 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D676317278C1EC600716757 /* 6.jpg */; };
@@ -50,6 +51,7 @@
 		7D01FDB6278E8FD700218EE7 /* lamp-remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-remove.png"; sourceTree = "<group>"; };
 		7D01FDB7278E8FD700218EE7 /* lamp-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-off.png"; sourceTree = "<group>"; };
 		7D01FDB8278E8FD700218EE7 /* lamp-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-on.png"; sourceTree = "<group>"; };
+		7D0D88AB27953F300020EA10 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		7D23DCA127915F8B0019EA4A /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 		7D23DCA427916A080019EA4A /* table.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = table.html; sourceTree = "<group>"; };
 		7D676317278C1EC600716757 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				7D01FDB3278E8E3F00218EE7 /* alertViewController.swift */,
 				7D23DCA127915F8B0019EA4A /* webViewController.swift */,
 				7DB5F2F32792ABCB00131AB6 /* webMissonViewController.swift */,
+				7D0D88AB27953F300020EA10 /* mapViewController.swift */,
 				7DBE907A278819A100CF093E /* Main.storyboard */,
 				7DBE9080278819A200CF093E /* Assets.xcassets */,
 				7DBE9082278819A200CF093E /* LaunchScreen.storyboard */,
@@ -285,6 +288,7 @@
 				7DBE907F278819A100CF093E /* _107.xcdatamodeld in Sources */,
 				7DBE9079278819A100CF093E /* ViewController.swift in Sources */,
 				7D67632C278C1EE200716757 /* pickerViewController.swift in Sources */,
+				7D0D88AC27953F300020EA10 /* mapViewController.swift in Sources */,
 				7DB5F2F42792ABCB00131AB6 /* webMissonViewController.swift in Sources */,
 				7D01FDB4278E8E3F00218EE7 /* alertViewController.swift in Sources */,
 				7DD5CDB32789D21E00BFF7C5 /* imageViewerViewController.swift in Sources */,

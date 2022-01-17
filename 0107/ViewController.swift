@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBAction func Btn(_ sender: UIButton) {
         Label.text = TextField.text
         
-        let myNumber = checkNumber(text: TextField.text!, number: "7") //숫자를 확인한 후 리턴받은 값은 상수에 넣어줌
+        let myNumber = checkNumber(text: TextField.text!, number: "8") //숫자를 확인한 후 리턴받은 값은 상수에 넣어줌
         
         moveToController(Controller: myNumber) //입력받은 상수와 이름이 같은 뷰를 불러온다
         

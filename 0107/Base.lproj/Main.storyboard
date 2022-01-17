@@ -336,14 +336,20 @@
                             <constraint firstItem="mdX-0j-uWU" firstAttribute="trailing" secondItem="8FC-ds-3yT" secondAttribute="trailing" constant="20" id="lxH-4b-Pqr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="7단계 도전" id="hvO-cy-nIu"/>
+                    <navigationItem key="navigationItem" title="7단계 도전" id="hvO-cy-nIu">
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="1KC-yU-xpj">
+                            <connections>
+                                <segue destination="iqy-JT-m8A" kind="show" id="fhB-aG-4yy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="8FC-ds-3yT" id="7OS-Jb-Dwr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocU-wW-tJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3809" y="811"/>
+            <point key="canvasLocation" x="3790" y="816"/>
         </scene>
         <!--5단계-->
         <scene sceneID="ue1-FZ-HFL">
@@ -532,6 +538,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBZ-s3-fMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3789.8550724637685" y="77.678571428571431"/>
+        </scene>
+        <!--8단계-->
+        <scene sceneID="swk-jQ-cY3">
+            <objects>
+                <viewController storyboardIdentifier="8" id="iqy-JT-m8A" customClass="mapViewController" customModule="_107" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k2r-6l-Ucj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-ZR-4Gp">
+                                <rect key="frame" x="20" y="88" width="374" height="32"/>
+                                <segments>
+                                    <segment title="현재위치"/>
+                                    <segment title="우리집"/>
+                                    <segment title="안동반점"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segamentControl:" destination="iqy-JT-m8A" eventType="valueChanged" id="Q99-ad-pOd"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8hv-21-qsg">
+                                <rect key="frame" x="20" y="127" width="374" height="637"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pii-kV-IUS">
+                                <rect key="frame" x="20" y="781" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-ja-bKc">
+                                <rect key="frame" x="20" y="819" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KPg-ZK-uw1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pii-kV-IUS" firstAttribute="leading" secondItem="KPg-ZK-uw1" secondAttribute="leading" constant="20" id="1Gb-7D-77d"/>
+                            <constraint firstItem="KPg-ZK-uw1" firstAttribute="bottom" secondItem="L4a-ja-bKc" secondAttribute="bottom" constant="22" id="D1s-CK-zVb"/>
+                            <constraint firstItem="pKz-ZR-4Gp" firstAttribute="top" secondItem="KPg-ZK-uw1" secondAttribute="top" id="DJG-My-PES"/>
+                            <constraint firstItem="L4a-ja-bKc" firstAttribute="top" secondItem="Pii-kV-IUS" secondAttribute="bottom" constant="17" id="Fnp-cu-lT5"/>
+                            <constraint firstItem="8hv-21-qsg" firstAttribute="top" secondItem="pKz-ZR-4Gp" secondAttribute="bottom" constant="8" symbolic="YES" id="Gjh-Pd-kut"/>
+                            <constraint firstItem="KPg-ZK-uw1" firstAttribute="trailing" secondItem="pKz-ZR-4Gp" secondAttribute="trailing" constant="20" id="J9U-VG-hIY"/>
+                            <constraint firstItem="pKz-ZR-4Gp" firstAttribute="leading" secondItem="KPg-ZK-uw1" secondAttribute="leading" constant="20" id="KNb-Id-iR8"/>
+                            <constraint firstItem="L4a-ja-bKc" firstAttribute="leading" secondItem="KPg-ZK-uw1" secondAttribute="leading" constant="20" id="UNy-bp-FnY"/>
+                            <constraint firstItem="8hv-21-qsg" firstAttribute="leading" secondItem="KPg-ZK-uw1" secondAttribute="leading" constant="20" id="bzm-4K-Tgh"/>
+                            <constraint firstItem="Pii-kV-IUS" firstAttribute="top" secondItem="8hv-21-qsg" secondAttribute="bottom" constant="17" id="dtl-Ir-TTh"/>
+                            <constraint firstItem="KPg-ZK-uw1" firstAttribute="trailing" secondItem="Pii-kV-IUS" secondAttribute="trailing" constant="20" id="l6K-iU-cfn"/>
+                            <constraint firstItem="KPg-ZK-uw1" firstAttribute="trailing" secondItem="8hv-21-qsg" secondAttribute="trailing" constant="20" id="lTr-gJ-zV3"/>
+                            <constraint firstItem="KPg-ZK-uw1" firstAttribute="trailing" secondItem="L4a-ja-bKc" secondAttribute="trailing" constant="20" id="mAd-Qt-24a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="8단계" id="UmB-b6-e4m"/>
+                    <connections>
+                        <outlet property="currentLocation" destination="Pii-kV-IUS" id="EhZ-Eq-3jc"/>
+                        <outlet property="currentLocationName" destination="L4a-ja-bKc" id="c75-en-wu5"/>
+                        <outlet property="mapView" destination="8hv-21-qsg" id="ylS-cc-I9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cM-ob-jpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4634.7826086956529" y="76.339285714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6sa-aL-vHn">
