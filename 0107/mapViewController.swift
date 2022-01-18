@@ -26,6 +26,19 @@ class mapViewController: UIViewController,CLLocationManagerDelegate {
     }
     
     @IBAction func segamentControl(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            self.currentLocation.text = ""
+            self.currentLocationName.text = ""
+            locationManager.startUpdatingLocation()
+        } else if sender.selectedSegmentIndex == 1{
+            setAnnotation(latitudeValue: 37.527280, longitudeValue: 126.814876, delta: 0.01, title: "우리집", subtitle: "경기 부천시 역곡로 471번가길 17")
+            self.currentLocation.text = "현재위치는"
+            self.currentLocationName.text = "우리집"
+        }else if sender.selectedSegmentIndex == 2{
+            setAnnotation(latitudeValue: 37.587023, longitudeValue: 127.018926, delta: 0.01, title: "안동반점", subtitle: "성북구 안암동")
+            self.currentLocation.text = "현재위치는"
+            self.currentLocationName.text = "안동반점"
+        }
         
     }
     
@@ -38,17 +51,18 @@ class mapViewController: UIViewController,CLLocationManagerDelegate {
         mapView.showsUserLocation = true
     }
     
-    func goLocation(latitudeValue: CLLocationDegrees,longitudeValue: CLLocationDegrees, delta span :Double) {
+    func goLocation(latitudeValue: CLLocationDegrees,longitudeValue: CLLocationDegrees, delta span :Double) -> CLLocationCoordinate2D {
         let pLocation = CLLocationCoordinate2DMake(latitudeValue, longitudeValue)
         let spanValue = MKCoordinateSpan(latitudeDelta: span, longitudeDelta: span)
         let pRegion = MKCoordinateRegion(center: pLocation, span: spanValue)
         
         mapView.setRegion(pRegion, animated: true)
+        return pLocation
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         let pLocation = locations.last
-        goLocation(latitudeValue: (pLocation?.coordinate.latitude)!, longitudeValue: (pLocation?.coordinate.longitude)!, delta: 0.01)
+        _ = goLocation(latitudeValue: (pLocation?.coordinate.latitude)!, longitudeValue: (pLocation?.coordinate.longitude)!, delta: 0.01)
         CLGeocoder().reverseGeocodeLocation(pLocation!) { placemarks, error in
             let pm = placemarks!.first
             let country = pm!.country
@@ -64,10 +78,15 @@ class mapViewController: UIViewController,CLLocationManagerDelegate {
             self.currentLocation.text = "현재 위치"
             self.currentLocationName.text = address
         }
-            
-            
-        
         locationManager.stopUpdatingLocation()
+    }
+    
+    func setAnnotation(latitudeValue: CLLocationDegrees, longitudeValue: CLLocationDegrees, delta span:Double, title Title:String, subtitle SubTitle:String){
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = goLocation(latitudeValue: latitudeValue, longitudeValue: longitudeValue, delta: span)
+        annotation.title = Title
+        annotation.subtitle = SubTitle
+        mapView.addAnnotation(annotation)
     }
     /*
     // MARK: - Navigation
